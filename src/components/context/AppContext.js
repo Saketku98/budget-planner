@@ -23,6 +23,7 @@ function reducer(state,action){
             newState2['expenses'] = newState2.expenses.filter((item) => {
                 if(item.id!==action.payload)
                     return item;
+		    return 0;
                     
             });
 
